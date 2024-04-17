@@ -17,12 +17,13 @@ function startGame() {
         message = "You're out of the game! 😭"
         isAlive = false
     }
+    console.log(message)
 }
 
 
-// CASH OUT!
-console.log(hasBlackJack)
-// Still Alive?
-console.log(isAlive)
-// message log
-console.log(message)
+// // CASH OUT!
+// console.log(hasBlackJack)
+// // Still Alive?
+// console.log(isAlive)
+// // message log
+// console.log(message)
