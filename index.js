@@ -6,14 +6,16 @@ let hasBlackJack = false
 let isAlive = true
 let message = ""
 
-let messageEl = document.getElementById("message-el")
+let messageEl = document.querySelector("#message-el")
 console.log(messageEl)
 
-let sumEl = document.getElementById("sum-el")
+let sumEl = document.querySelector("#sum-el")
 
 // logic
 function startGame() {
+
     sumEl.textContent = "Sum: " + sum
+
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
@@ -23,7 +25,9 @@ function startGame() {
         message = "You're out of the game!"
         isAlive = false
     }
+
     messageEl.textContent = message
+
 }
 
 
