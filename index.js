@@ -41,8 +41,8 @@ function renderGame() {
     messageEl.textContent = message
 }
 
-function getRandomCard() {
-    return 5
+function getRandomCard() { 
+    return Math.floor(Math.random() * 13) + 1
    }
 
 function newCard() {
