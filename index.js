@@ -1,6 +1,6 @@
 // global variables
-let firstCard = 10
-let secondCard = 11
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard
 let hasBlackJack = false
@@ -12,6 +12,8 @@ let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
 
 // logic
+
+
 
 function startGame() {
     renderGame()
@@ -39,8 +41,12 @@ function renderGame() {
     messageEl.textContent = message
 }
 
+function getRandomCard() {
+    return 5
+   }
+
 function newCard() {
-    let card = 7
+    let card = getRandomCard()
     sum += card
     cards.push(card)
     renderGame()
