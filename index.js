@@ -13,7 +13,7 @@ let playerEl = document.querySelector("#player-el")
 // objects
 
 let player = {
-    name: "Hanru",
+    name: "Player",
     chips: 200,
 }
 playerEl.textContent = player.name + ": $" + player.chips
