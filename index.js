@@ -8,15 +8,14 @@ let message = ""
 let messageEl = document.querySelector("#message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
-let playerEl = document.getElementById("player-el")
+let playerEl = document.querySelector("#player-el")
 
 // objects
 
 let player = {
     name: "Hanru",
-    chips: 145
+    chips: 200,
 }
-
 playerEl.textContent = player.name + ": $" + player.chips
 
 
