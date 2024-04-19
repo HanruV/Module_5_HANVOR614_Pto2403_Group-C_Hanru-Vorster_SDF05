@@ -9,10 +9,12 @@ let messageEl = document.querySelector("#message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
 
-console.log(cards)
+// objects
+
+
+
+
 // logic
-
-
 
 function startGame() {
     
@@ -60,7 +62,7 @@ function getRandomCard() {
 }
 
 function newCard() {
-    
+
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
         sum += card
